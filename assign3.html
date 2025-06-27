@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Three</title>
+  <style>
+         @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+          @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Bitcount+Grid+Double:wght@100..900&family=Edu+AU+VIC+WA+NT+Pre:wght@500&family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Itim&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Tagesschrift&display=swap');
+
+
+*{
+  text-align: center;
+}
+    .container{
+      display: grid;
+      height: 90vh;
+      grid-template:repeat(1, 1fr) repeat(2,4fr) repeat(1, 1fr)/ repeat(1,1fr) repeat(1, 1fr) repeat(2,.5fr) repeat(1, 1fr);
+      gap:5px;
+    }
+    .child{
+      border:2px solid black;
+      cursor: pointer;
+      transition: .2s;
+      border-radius:5px;
+    }
+    .child:hover{
+      transform: scale(1.05);
+    }
+    .top{
+      grid-area:1/1/2/6;
+      background-color: rgb(193, 134, 248);
+    }
+    .left-side{
+      grid-area: 2/1/4/2;
+      background-color: rgb(233, 222, 244);
+
+    }
+    .middle-top-left{
+      grid-area: 2/2/3/4;
+      background-color: rgb(187, 255, 255);
+    }
+    .middle-top-right{
+      background-color: pink;
+      grid-area:2/4/3/6;
+    }
+  .bottom-left{
+    grid-area:3/2/4/3;
+    background-color: rgb(234, 234, 136);
+  }
+  .bottom-middle{
+    grid-area:3/3/4/5;
+    background-color: rgb(229, 139, 123);
+  }
+  .bottom-right{
+    grid-area: 3/5/4/6;
+    background-color: rgb(170, 255, 170);
+  }
+  .footer{
+    grid-area:4/1/5/6;
+    background-color: rgb(250, 215, 215);
+  }
+  span{
+
+
+font-family: "Bitcount Grid Double", sans-serif;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="child top"></div>
+    <div class="child left-side"></div>
+    <div class="child middle-top-left"></div>
+    <div class="child middle-top-right"></div>
+    <div class="child bottom-left"></div>
+    <div class="child bottom-middle "></div>
+    <div class="child bottom-right"></div>
+    <div class="child footer"></div>
+  </div>
+  <footer>
+    &copy; <span>Bibek Chand</span> <a href="https://github.com/bibekchand"><i
+        class="fa-brands fa-github fa-spin-pulse fa-sm"></i></a>
+  </footer>
+</body>
+</html>

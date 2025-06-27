@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Second Assignment</title>
+  <style>
+          @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+          @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Bitcount+Grid+Double:wght@100..900&family=Edu+AU+VIC+WA+NT+Pre:wght@500&family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Itim&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Tagesschrift&display=swap');
+
+  
+    * {
+      margin: 0;
+      box-sizing: border-box;
+      text-align: center;
+     
+    }
+    span{
+
+      font-family: "Bitcount Grid Double", sans-serif;
+    }
+
+    .container {
+      display: grid;
+      height: 90vh;
+      width: 30vw;
+      grid-template: repeat(1, 2fr) repeat(2, 1.5fr) 
+      repeat(1, 5fr) / repeat(3, 1fr) ;
+      margin:20px auto;
+
+    }
+
+    .child {
+      border: 2px solid black;
+      transition: .2s;
+      cursor:pointer;
+    }
+    .child:hover{
+      transform: scale(1.05);
+    }
+
+    .top {
+      grid-area: 1/2/2/4;
+      background-color: rgb(251, 251, 142);
+    }
+
+    .side {
+      grid-area: 1/1/5/2;
+      background-color: rgb(213, 213, 213);
+    }
+    .middle-left{
+      grid-area:2/2/4/3;
+      background-color: rgb(255, 186, 136);
+    }
+    .middle-top{
+      grid-area:2/3/3/4;
+      background-color: rgb(149, 244, 244);
+    }
+    .middle-bottom{
+      grid-area:3/3/4/4;
+      background-color: rgb(197, 244, 128);
+    }
+    .bottom{
+      grid-area:4/2/5/4;
+      background-color: aliceblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="child top"></div>
+    <div class="child side"></div>
+    <div class="child middle-left"></div>
+    <div class="child middle-top"></div>
+    <div class="child middle-bottom"></div>
+    <div class="child bottom"></div>
+  </div>
+  <footer>
+    &copy; <span>Bibek Chand</span> <a href="https://github.com/bibekchand"><i class="fa-brands fa-github fa-fade fa-sm"></i></a>
+  </footer>
+</body>
+
+</html>
